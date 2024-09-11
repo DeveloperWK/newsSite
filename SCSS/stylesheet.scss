@@ -13,6 +13,7 @@
 header {
   height: 110px;
   background-color: rgb(202, 121, 15);
+
   nav {
     position: relative;
     p {
@@ -54,22 +55,37 @@ header {
     }
   }
 }
+.title {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 20px;
+  text-decoration: underline;
+  font-family: "Roboto", system-ui;
+  text-transform: capitalize;
+  color: brown;
+}
 .blog_container {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
+  flex-flow: row wrap;
+
   gap: 50px;
   justify-content: center;
   .blog_box {
     padding: 15px;
     width: 25%;
-    box-shadow: 0 0 10px 5px #bcb8b1;
+    border: 1px solid;
+    border-radius: 10px;
+    &:hover {
+      box-shadow: 0 0 10px 5px #bcb8b1;
+    }
     .blog_img {
       width: 100%;
     }
     .blog_title {
       font-family: "Roboto", system-ui;
-      font-size: 25px;
+      // font-size: 25px;
     }
     .blog_des {
       font-family: "Roboto", system-ui;
